@@ -24,6 +24,8 @@ Add or change files in the repo for use with MNE
                 This often means e.g. cropping to a very short segment of data
                 or using a small subset of channels.
 
+   Please add licensing information for your files under `license.txt` in the directory that contains the files. CC0 licensing is preferred.
+
 3. Update the `version.txt` of the repo in your PR to the next increment.
 
 4. Once your PR is merged, ask a maintainer to cut a new release of the testing data, e.g. 0.53.
@@ -33,7 +35,7 @@ Add or change files in the repo for use with MNE
    1. Change the `'testing'` value in the `RELEASES` dict in `mne/datasets/config.py` to the new version.
 
    2. Set the new hash. This can be easily done by either:
-   
+
       1. Downloading and running `md5sum` on this (with the proper version number):
 
           https://codeload.github.com/mne-tools/mne-testing-data/tar.gz/0.53
